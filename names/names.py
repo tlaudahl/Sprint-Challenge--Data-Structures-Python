@@ -14,8 +14,9 @@ duplicates = []  # Return the list of duplicates in this data structure
 
 # Replace the nested for loops below with your improvements
 for name_1 in names_1:
-    for name_2 in names_2:
-        if name_1 == name_2:
+    # for name_2 in names_2:
+    # We don't need to loop through both lists. We can loop through the first list and just check if that current value is in the 2nd list
+        if name_1 in names_2:
             duplicates.append(name_1)
 
 end_time = time.time()
